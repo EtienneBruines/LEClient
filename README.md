@@ -8,6 +8,39 @@
 
 PHP LetsEncrypt client library for ACME v2. The aim of this client is to make an easy-to-use and integrated solution to create a LetsEncrypt-issued SSL/TLS certificate with PHP. The user has to have access to the web server or DNS management to be able to verify the domain is accessible/owned by the user.
 
+## This fork
+
+This fork is (usuall) up-to-date with the original work at yourivw/LEClient, but with patches applied to work with PHP 8.
+
+### How to install this fork
+
+1. Add this to your `composer.json` file:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:EtienneBruines/LEClient.git"
+        }
+    ]
+}
+```
+
+2. Update your require statement within `composer.json` to use this repository:
+
+```
+{
+	"require": {
+		"yourivw/leclient": "dev-master"
+	}
+}
+```
+
+```
+
+```
+
 ## Current version
 
 The current version is 1.2.2
