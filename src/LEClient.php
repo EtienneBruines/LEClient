@@ -37,6 +37,7 @@ use LEClient\Exceptions\LEClientException;
  * @link       https://github.com/yourivw/LEClient
  * @since      Class available since Release 1.0.0
  */
+#[\AllowDynamicProperties]
 class LEClient
 {
 	const LE_PRODUCTION = 'https://acme-v02.api.letsencrypt.org';
@@ -47,6 +48,7 @@ class LEClient
 
 	private $connector;
 	private $account;
+	private $baseURL;
 	
 	private $sourceIp = false;
 	
